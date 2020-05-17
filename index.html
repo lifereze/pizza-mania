@@ -3,16 +3,16 @@
 <html lang="en">
 <head>
   
-  <title>Jordan's Pizza</title>
+  <title>Mania Pizza</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="bootstrap/bootstrap-4.4.1-dist/css/bootstrap-grid.css"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
 
@@ -38,5 +38,52 @@
     </div>
   </nav>
 
+  <header id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+            <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="pizza.jpg" alt="Pizza1" width="1200" height="700">
+          <div class="carousel-caption">
+          <h3>Local Pizza</h3>
+          <p>Enjoy our custom made pizza that incorprates taste from differnt cultures</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/delivery.png" alt="Dough" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3></h3>
+          <p>As Customer satisfaction, we don't want to keep you in the waiting</p>
+          <p>As such we have proficient bike riders who will make sure the pizza reach you in a timely state!</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/oven.jpeg" alt="Oven" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Wood fire oven</h3>
+          <p>We cook all pizzas in a clean and observed regulations</p> 
+          <p>Your Pizza is cooked upon order to make sure you enjoy the freshest commodity from our side</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="assets/images/pizza2.jpg" alt="Pizza2" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Well prepared ingredients</h3>
+          <p>Our ingredients are well sourced from local farmers to promote local revenue and scrutinized by our experienced chefs</p>
+        </div>      
+      </div>
+
+  </header>
 
 </body>
