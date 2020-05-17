@@ -10,4 +10,5 @@ header{
     background-image: url(../images/pizza.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 3%;
 }
