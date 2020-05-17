@@ -1,84 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="bootstrap/bootstrap-4.4.1-dist/css/bootstrap-grid.css" />
-    <link rel="stylesheet" href="bootstrap/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Play&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="jquery-3.5.1.js"></script>
-    <script src="script.js"></script>
-    <title>Pizzeria</title>
-  </head>
+<head>
+  
+  <title>Jordan's Pizza</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+</head>
+<body>
 
-  <body>
-
-    <header><h1>Pizerria</h1>
-    <p>Welcome to Pizzeria Pizzas</p><br>
-    <p>Click on each of the checkboxes below to help us determine the cost of your order, upon checking the three of them, press the "Sumbit Order" button to see your pricing</p>
-    </header>
-    <div class="container">
-
-        <div class="card-group">
-
-            <div class="card">
-              <div class="card-body">
-                <h2 class="card-title">Desired Size</h2>
-                <form>
-                    <input type="radio" name="size" id="small">Small<br>
-                    <input type="radio" name="size" id="medium">Medium<br>
-                    <input type="radio" name="size" id="medium">Large 
-                  </form>
-                
-              </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">What Kind of Crust Would You like</h2>
-                  <form>
-                      <input type="radio" name="crust" id="crispy">Crispy<br>
-                      <input type="radio" name="crust" id="stuffed">Stuffed<br>
-                      <input type="radio" name="crust" id="gluttenFree">Glutten-Free
-                    </form>
-                  
-                </div>
-              </div>
-
-            <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Choose Your Ideal Toppings</h2>
-                  <form>
-                    <input type="radio" name="crust" id="pepperoni">Pepperoni<br>
-                    <input type="radio" name="crust" id="mushroom">Mushroom<br>
-                    <input type="radio" name="crust" id="onion">Onion
-                    </form>
-                  
-                </div>
-              </div>
-
-
-              
-
-              <div class="price" id="price">
-                <ul>
-
-                </ul>
-              </div>
-
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand hidden-xs" href="#myPage"><img src="images/pizza.jpeg"></a>
+        <a class="navbar-brand" href="#myPage">Pizza Mania</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#menu">MENU</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#location">LOCATION</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
 
-
-
-
-  </body>
+</body>
