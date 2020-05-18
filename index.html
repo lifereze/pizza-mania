@@ -162,4 +162,88 @@
       </div>
   </section>
 
+  <section class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4><span class="glyphicon glyphicon-shopping-cart"></span>Order</h4>
+              </div>
+              <div class="modal-body">
+                <form role="form">
+                  <div class="form-group"><label for="qty">QUANTITY</label>
+                    <input type="number" class="form-control" id="qty" placeholder="How many?">
+                  </div>
+
+                  <div class="form-group"><label>PIZZA SIZE</label>
+                    <div class="radio">
+                      <label class="radio-inline"><input type="radio" name="optradio">Small </label>
+                      <label class="radio-inline"><input type="radio" name="optradio">Medium </label>
+                      <label class="radio-inline"><input type="radio" name="optradio">Large </label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="sel1">CRUST</label>
+                      <select class="form-control" id="sel1">
+                        <option>Crispy</option>
+                        <option>Stuffed</option>
+                        <option>Gluten-Free</option>
+                      </select>
+                  </div>
+
+                    <button type="submit" class="btn btn-block">PLACE ORDER
+                      <span class="glyphicon glyphicon-ok"></span>
+                    </button>
+
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                  <span class="glyphicon glyphicon-remove"></span> Cancel
+                </button>
+                <p>Need <a href="#">help?</a></p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+
+<!-- Container (Contact Section) -->
+<section id="contact" class="container">
+  <h3 class="text-center slideanim">Contact</h3>
+  <p class="text-center slideanim"><em>Send us your feedback!</em></p>
+
+  <div class="row">
+    <article class="col-md-4">
+      <p class="slideanim">CONTACT US AND MAKE YOUR ORDER NOW!!</p>
+      <p class="slideanim"><span class="glyphicon glyphicon-map-marker"></span>Prestige plaza, Ngong Rd, Nairobi</p>
+      <p class="slideanim"><span class="glyphicon glyphicon-phone"></span>Hotline: 020-7384--2343</p>
+      <p class="slideanim"><span class="glyphicon glyphicon-envelope"></span>Email: pizzamania@gmail.com</p>
+    </article>
+    <article class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control slideanim" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control slideanim" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+        </div>
+          <textarea class="form-control slideanim" id="subject" name="subject" placeholder="Subject" rows="1"></textarea>
+          <br>
+          <textarea class="form-control slideanim" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+          <br>
+        <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right slideanim" type="submit">Submit</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 </body>
