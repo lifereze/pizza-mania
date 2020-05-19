@@ -1,353 +1,151 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
-  <title>Mania Pizza</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet" type="text/css">
-  <script src="jquery-3.5.1.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="bootstrap/bootstrap-4.4.1-dist/css/bootstrap-grid.css">
   <link rel="stylesheet" href="bootstrap/style.css">
+  <title>Magic Pizza</title>
 </head>
+
 <body>
-
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand hidden-xs" href="#myPage"><img src="images/pizza.jpeg"></a>
-        <a class="navbar-brand" href="#myPage">Pizza Mania</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#menu">MENU</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="#location">LOCATION</a></li>
-          <li><a href="#about">ABOUT</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header id="myCarousel" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-
-            <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="pizza.jpg" alt="Pizza1" width="1200" height="700">
-          <div class="carousel-caption">
-          <h3>Local Pizza</h3>
-          <p>Enjoy our custom made pizza that incorprates taste from differnt cultures</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="images/delivery.png" alt="Dough" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3></h3>
-          <p>As Customer satisfaction, we don't want to keep you in the waiting</p>
-          <p>As such we have proficient bike riders who will make sure the pizza reach you in a timely state!</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="images/oven.jpeg" alt="Oven" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Wood fire oven</h3>
-          <p>We cook all pizzas in a clean and observed regulations</p> 
-          <p>Your Pizza is cooked upon order to make sure you enjoy the freshest commodity from our side</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="assets/images/pizza2.jpg" alt="Pizza2" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Well prepared ingredients</h3>
-          <p>Our ingredients are well sourced from local farmers to promote local revenue and scrutinized by our experienced chefs</p>
-        </div>      
-      </div>
-
-          <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-
-  </header>
-
-<!-- Container (MENU Section) -->
-<section id="menu" class="bg-1">
   <div class="container">
-  <h3 class="text-center slideanimate">PIZZA MENU</h3>
-  <p class="text-center slideanimate">Make yourself an order by selecting the type and size of your choice.<br> Follow the step by sted selection below!</p>
-  </div>
-
-      <div class="row display-flex text-center">
-
-      <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
-        <div class="thumbnail">
-          <img src="images/pepperoni.jpeg" alt="Margherita">
-          <p><strong>Pepperoni </strong></p>
-          <p data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Toppings Info <i class="fa fa-info-circle"></i></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
-        </div>
-      </article>
-
-      <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
-        <div class="thumbnail">
-          <img src="images/mushroom.jpeg" alt="Bianca">
-          <p><strong>Mushroom</strong></p>
-          <p data-toggle="tooltip" title="Homemade mozzarella, ricotta, Pecorino romano">Toppings Info <i class="fa fa-info-circle"></i></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
-        </div>
-      </article>
-
-      <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
-        <div class="thumbnail">
-          <img src="images/onion.jpeg" alt="Marinara">
-          <p><strong>Onion</strong></p>
-          <p data-toggle="tooltip" title="Imported tomato sauce, Oregano, Garlic, Pecorino romano">Toppings Info <i class="fa fa-info-circle"></i></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
-        </div>
-      </article>
-
-      <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
-        <div class="thumbnail">
-          <img src="images/marinara.jpeg" alt="Marinara">
-          <p><strong>Marinara</strong></p>
-          <p data-toggle="tooltip" title="Imported tomato sauce, Oregano, Garlic, Pecorino romano">Toppings Info <i class="fa fa-info-circle"></i></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
-        </div>
-      </article>
-
-      <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
-        <div class="thumbnail">
-          <img src="images/bianca.jpeg" alt="Marinara">
-          <p><strong>Bianca</strong></p>
-          <p data-toggle="tooltip" title="Imported tomato sauce, Oregano, Garlic, Pecorino romano">Toppings Info <i class="fa fa-info-circle"></i></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
-        </div>
-      </article>
-
-      <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
-        <div class="thumbnail">
-          <img src="images/montanara.jpeg" alt="Marinara">
-          <p><strong>Montanara</strong></p>
-          <p data-toggle="tooltip" title="Imported tomato sauce, Oregano, Garlic, Pecorino romano">Toppings Info <i class="fa fa-info-circle"></i></p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
-        </div>
-      </article>
-
-      </div>
-  </section>
-
-  <section class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-                <h4><span class="glyphicon glyphicon-shopping-cart"></span>Order</h4>
-              </div>
-              <div class="modal-body">
-                <form role="form">
-                  <div class="form-group"><label for="qty">QUANTITY</label>
-                    <input type="number" class="form-control" id="qty" placeholder="How many?">
-                  </div>
-
-                  <div class="form-group"><label>PIZZA SIZE</label>
-                    <div class="radio">
-                      <label class="radio-inline"><input type="radio" name="optradio">Small </label>
-                      <label class="radio-inline"><input type="radio" name="optradio">Medium </label>
-                      <label class="radio-inline"><input type="radio" name="optradio">Large </label>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="sel1">CRUST</label>
-                      <select class="form-control" id="sel1">
-                        <option>Crispy</option>
-                        <option>Stuffed</option>
-                        <option>Gluten-Free</option>
-                      </select>
-                  </div>
-
-                    <button type="submit" class="btn btn-block">PLACE ORDER
-                      <span class="glyphicon glyphicon-ok"></span>
-                    </button>
-
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                  <span class="glyphicon glyphicon-remove"></span> Cancel
-                </button>
-                <p>Need <a href="#">help?</a></p>
-              </div>
-            </div>
-          </div>
+    <div id="home">
+      <h1 id="title"><span id="m">M</span><span id="a">A</span><span id="g">N</span>I<span id="i">A</span></h1>
+      <h4 id="love">Pizza Mania</h4>
+      <P>Welcome to Pizza Mania where you get get your order prepared upon ordering</P>
+      <p>Our team of experienced chefs select the best ingredients in the market to achieve customer satisfation.</p>
+      <p>Customize your selection and make an order Now!!</p>
     </div>
-  </section>
+    <div id="work">
 
+  
 
-<!-- Container (Contact Section) -->
-<section id="contact" class="container">
-  <h3 class="text-center slideanim">Contact</h3>
-  <p class="text-center slideanim"><em>Send us your feedback!</em></p>
-
-  <div class="row">
-    <article class="col-md-4">
-      <p class="slideanim">CONTACT US AND MAKE YOUR ORDER NOW!!</p>
-      <p class="slideanim"><span class="glyphicon glyphicon-map-marker"></span>Prestige plaza, Ngong Rd, Nairobi</p>
-      <p class="slideanim"><span class="glyphicon glyphicon-phone"></span>Hotline: 020-7384--2343</p>
-      <p class="slideanim"><span class="glyphicon glyphicon-envelope"></span>Email: pizzamania@gmail.com</p>
-    </article>
-    <article class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control slideanim" id="name" name="name" placeholder="Name" type="text" required>
+      <div id="choose">
+        <div class="order">
+          <h2>MAKE YOUR ORDER</h2>
+          <button id="order" type="button">ORDER</button>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control slideanim" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-        </div>
-          <textarea class="form-control slideanim" id="subject" name="subject" placeholder="Subject" rows="1"></textarea>
-          <br>
-          <textarea class="form-control slideanim" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-          <br>
-        <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right slideanim" type="submit">Submit</button>
+        <div class="deliver">
+          <h2>ORDER A DELIVERY</h2>
+          <button id="deliver" type="button">DELIVERY</button>
         </div>
       </div>
-    </article>
+
+      <div class="row">
+        <div class="col-md-6">
+      <div id="menu">
+        <form>
+          <fieldset>
+            <legend>Select your desired taste and size of numberOfPizzas</legend>
+
+            <label>Select your pizza size</label>
+            <select id="sizes">
+              <option value="600" id="bigger">SMALL</option>
+              <option value="800" id="big">MEDIUM</option>
+              <option value="1000" id="biggest">LARGE PIZZA</option>
+            </select><br>
+
+            <label>Type of Crust</label>
+            <select id="crusts">
+              <option value="150" id="crispy">CRISPY</option>
+              <option value="100" id="stuffed">STUFFED</option>
+              <option value="200" id="gluten">GLUTEN FREE</option>
+              <option value="220" id="sicilian">SICILIAN</option>
+              <option value="250" id="pretzel">PRETZEL</option>
+            </select><br>
+
+            <label>Desired Topping</label>
+            <select id="toppings">
+              <option value="100" id="pepperoni">PEPPERONI</option>
+              <option value="100" id="pineapple">PINEAPPLE</option>
+              <option value="100" id="olive">BLACK OLIVES</option>
+              <option value="100" id="mushroom">MUSHROOMS</option>
+              <option value="100" id="cheese">CHEESE</option>
+              <option value="100" id="onions">ONIONS</option>
+              <option value="100" id="bacon">BACON</option>
+              <option value="100" id="pepper">GREEN PEPPER</option>
+            </select><br>
+
+            <label>How many pizzas do you want:</label>
+            <input id="numberOfPizzas" type="number"><br>
+
+            <button type="submit" value="Submit" id="makeOrder" onclick="totalPrice()">Make Order</button>
+          </fieldset>
+        </form>
+        <label>Total price</label>
+        <input type="text" id="total" placeholder="total"><br>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div id="menu1">
+          <form>
+            <fieldset>
+              <legend>Order a Delivery</legend>
+  
+              <label>Select your pizza size</label>
+              <select id="sizes1">
+                <option value="1000" id="biggest">LARGE PIZZA</option>
+                <option value="800" id="bigger">MEDIUM PIZZA</option>
+                <option value="600" id="big">SMALL PIZZA</option>
+              </select><br>
+  
+              <label>Select the crust you like</label>
+              <select id="crusts1">
+                <option value="150" id="crispy">CRISPY</option>
+                <option value="100" id="stuffed">STUFFED</option>
+                <option value="200" id="gluten">GLUTEN FREE</option>
+                <option value="220" id="sicilian">SICILIAN</option>
+                <option value="250" id="pretzel">PRETZEL</option>
+              </select><br>
+  
+              <label>Choose you favourite toppings</label>
+              <select id="toppings1">
+                <option value="100" id="pepperoni">PEPPERONI</option>
+                <option value="100" id="pineapple">PINEAPPLE</option>
+                <option value="100" id="olive">BLACK OLIVES</option>
+                <option value="100" id="mushroom">MUSHROOMS</option>
+                <option value="100" id="cheese">CHEESE</option>
+                <option value="100" id="onions">ONIONS</option>
+                <option value="100" id="bacon">BACON</option>
+                <option value="100" id="pepper">GREEN PEPPER</option>
+              </select><br>
+  
+              <label>How many pizzas do you want:</label>
+              <input id="numberOfPizzas1" type="number"><br>
+
+              <label>Tell us your location</label>
+              <input id="location" type="text"><br>
+
+              <button type="submit" id="orderDelivery" value="Submit" onclick="totalPrice1()">Order Delivery</button>
+            </fieldset>
+          </form>
+          <label>Total price</label>
+          <input type="text" id="totalDelivery" placeholder="total">
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div id="contacts">
+      <h1>CONTACT US</h1>
+      <p>+254 741 534 863</p>
+      <p>pizzamania@info.com</p>
+      <form>
+        <input type="text" placeholder="NAME..." name="NAME" id="name">
+        <input type="email" placeholder="Email..." name="EMAIL" id="email">
+        <input type="text" placeholder="Your feedback" name="MESSAGE" id="message">
+      <div class="clear"><input type="submit" value="Submit" name="submit" id="submit" class="button"></div>
+  </form>
+    </div>
   </div>
-</section>
-
-<section id="location" class="container">
-  <h3 class="text-center slideanim">Location</h3>
-  <!-- Add Google Maps -->
-  <div id="googleMap" class="slideanim"></div>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALQil3gknkbL8NFZ-l7LzjwIkdNreERxQ&callback=myMap"></script>
-
-  <!-- Container (The About Section) -->
-<section id="about" class="container text-center">
-  <article>
-    <h3 class="slideanim">About</h3>
-    <p class="slideanim"><em>We love Pizza! Our Pizza Chef is a certified pizzaiolo of the Associazione Pizzaiuoli Napoletani</em></p>
-    <p class="slideanim">Jordanio's Authentic Pizza Napoletana has been in business since 1967. Owner and pizzaiolo Jordanio is a a certified pizzaiolo of the Associazione Pizzaiuoli Napoletani (Association of Neapolitan Pizza-makers), and all of our pizzas are made according to Neapolitan tradition. We use only the highest-quality ingredients, including buffalo-milk mozzarella (Mozzarella di Bufala Campana D.O.P.) and San Marzano D.O.P. tomatoes imported from Naples as well as our fresh, home-made mozzarella. All pizzas are drizzled with 100% Italian extra-virgin olive oil and then baked to perfection at 850 degrees in a Mario Acunto wood-fired brick oven from Naples. The finished product is a pizza whose taste will bring you back to Italy. We recommend our three specialties - the Margherita D.O.P., Mom's, and La Saporita. 
-  </p>
-    <br>
-    <br>
-  </article>
-
-    <!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <section class="row">
-                <article class="col-sm-4">
-                    <h5 class="uppercase general-sub slideanim">Opening Hours</h5>
-                    <p class="inline-block slideanim">
-                        Monday - Sartuday (Closed Sundays)<br>
-                        11:30am - 8:00pm<br>
-                     
-                    </p>
-                </article>
-                <article class="col-sm-4 ">
-                    <h5 class="uppercase general-sub slideanim">Address</h5>
-                    <p class="inline-block slideanim">
-                        Prestige plaza along Ngong Road, Nairobi<br>
-                        Phone: +25473487538<br>
-                        Email: pizzamania@gmail.com
-                    </p>
-                </article>
-                <article class="col-sm-4 ">
-                    <h5 class="uppercase general-sub slideanim">Social</h5>
-                    <ul class="list-inline social-links">
-                        <li><a target="_blank " href="# "><i class="fa fa-facebook slideanim"></i></a></li>
-                        <li><a target="_blank " href="# "><i class="fa fa-twitter slideanim"></i></a></li>
-                        <li><a target="_blank " href="# "><i class="fa fa-instagram slideanim"></i></a></li>
-                        <li><a target="_blank " href="# "><i class="fa fa-youtube slideanim"></i></a></li>
-                    </ul>
-                </article>
-            </section>
-</footer>
-  </div>
-</section>
-
-<script>
-
-  $(document).ready(function(){
-    // Initialize Tooltip
-    $('[data-toggle="tooltip"]').tooltip(); 
-    
-    // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-  
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 900, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-    
-     $(".slideanimate").each(function(){
-          $(this).stop().delay(1000).addClass("slide");
-      });
-    
-      $(window).scroll(function() {
-      $(".slideanim").each(function(){
-        var pos = $(this).offset().top;
-      
-        var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-      });
-      });
-      
-  })
-  
-  </script>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

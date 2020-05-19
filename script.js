@@ -1,60 +1,61 @@
-  function myMap() {
-  var myCenter = new google.maps.LatLng(53.3498,-6.2603);
-  var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-  }
-
-  function myMap() {
-    var myCenter = new google.maps.LatLng(53.3498,-6.2603);
-    var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    var marker = new google.maps.Marker({position:myCenter});
-    marker.setMap(map);
-    }
-
-    $(document).ready(function(){
-        // Initialize Tooltip
-        $('[data-toggle="tooltip"]').tooltip(); 
-        
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-      
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-      
-            // Prevent default anchor click behavior
-            event.preventDefault();
-      
-            // Store hash
-            var hash = this.hash;
-      
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 900, function(){
-         
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-        
-         $(".slideanimate").each(function(){
-              $(this).stop().delay(1000).addClass("slide");
-          });
-        
-          $(window).scroll(function() {
-          $(".slideanim").each(function(){
-            var pos = $(this).offset().top;
-          
-            var winTop = $(window).scrollTop();
-            if (pos < winTop + 600) {
-              $(this).addClass("slide");
-            }
-          });
-          });
-          
-      })
+function totalPrice (){
+    var price = 0;
+    var selectedSize = document.getElementById("sizes")
+    var CostOfSize = selectedSize.options[selectedSize.selectedIndex].value;
+    var selectedCrust = document.getElementById("crusts")
+    var CostOfCrust = selectedCrust.options[selectedCrust.selectedIndex].value;
+    var selectedTopping = document.getElementById("toppings")
+    var CostOfToppings = selectedTopping.options[selectedCrust.selectedIndex].value;
+    var QuantityOfPizza = document.getElementById("numberOfPizzas").value;
+    price = parseInt(CostOfSize) + parseInt(CostOfCrust) + parseInt(CostOfToppings)
+    totalPrice = price * parseInt(QuantityOfPizza);
+    document.getElementById("total").value = totalPrice;
+    event.preventDefault();
+  };
+  
+  function totalPrice1 (){
+    var price = 0;
+    var selectedSize = document.getElementById("sizes1")
+    var CostOfSize = selectedSize.options[selectedSize.selectedIndex].value;
+    var selectedCrust = document.getElementById("crusts1")
+    var CostOfCrust = selectedCrust.options[selectedCrust.selectedIndex].value;
+    var selectedTopping = document.getElementById("toppings1")
+    var CostOfToppings = selectedTopping.options[selectedCrust.selectedIndex].value;
+    var QuantityOfPizza = document.getElementById("numberOfPizzas1").value;
+    price = parseInt(CostOfSize) + parseInt(CostOfCrust) + parseInt(CostOfToppings)
+    totalPrice = price * parseInt(QuantityOfPizza);
+    document.getElementById("totalDelivery").value = totalPrice;
+    event.preventDefault();
+    
+  };
+  
+  $(document).ready (function(){
+  
+  $("#order").on("click", function(){
+    $("#menu").fadeIn(1000);
+    $(".deliver").hide();
+  })
+  
+  $("#makeOrder").on("click", function(){
+    $(".deliver").show();
+  })
+  
+  $("#deliver").on("click", function(){
+    $("#menu1").fadeIn(1000);
+  })
+  
+  $("#order").on("click", function(){
+    $("#menu1").hide();
+  })
+  
+  $("#orderDelivery").on("click", function(){
+    var yourLocation = document.getElementById("location").value;
+    alert("Your delivery will be made to " + yourLocation + ", delivery fee is Kshs.200");
+  });
+  
+  $("#submit").on("click", function () {
+    var userName = document.getElementById("name").value;
+    alert(userName + " " + "we have received your message, thank you for your feedback");
+  });
+  
+  });
